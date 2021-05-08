@@ -47,7 +47,7 @@ function plugin(hook, vm) {
         next(
             `
         ${defaultOptions.position === "bottom" ? html : ""}
-        <div style="margin-${defaultOptions.position ? "bottom" : "top"}: ${
+        <div id="word-count" style="margin-${defaultOptions.position ? "bottom" : "top"}: ${
                 defaultOptions.margin
             };">
             <span style="
