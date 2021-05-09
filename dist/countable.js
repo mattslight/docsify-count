@@ -30,7 +30,7 @@ function plugin(hook, vm) {
     hook.afterEach(function (html, next) {
         // Support localization
         let str = wordsCount.toLocaleString() + " words"
-        let readTime = Math.ceil(wordsCount / 200) + " min"
+        let readTime = Math.ceil(wordsCount / 200) + " mins reading time"
         if (defaultOptions.language === "chinese") {
             str = wordsCount.toLocaleString() + " 字"
             readTime = Math.ceil(wordsCount / 400) + " 分钟"
